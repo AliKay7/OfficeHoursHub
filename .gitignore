@@ -1,0 +1,7 @@
+echo ".DS_Store
+worker/.wrangler/
+worker/node_modules/
+worker/curly-flower-*
+*.log
+site/.git/
+worker/.git/" > .gitignore

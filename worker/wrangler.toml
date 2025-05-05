@@ -1,0 +1,8 @@
+name = "officehourshub-api"
+compatibility_date = "2024-05-01"
+main = "index.js"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "officehourshub"
+database_id = "11470b5f-acad-4ad0-aaef-e7383d5f4a01"

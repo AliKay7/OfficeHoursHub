@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OfficeHoursHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Office Hours Hub</h1>
+
+  <h2>Search & Filter</h2>
+  <input type="text" id="search" placeholder="Search by professor or course...">
+  <select id="day-filter">
+    <option value="">Filter by day</option>
+    <option value="Monday">Monday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Wednesday">Wednesday</option>
+    <option value="Thursday">Thursday</option>
+    <option value="Friday">Friday</option>
+  </select>
+
+  <h2>Office Hours Schedule</h2>
+  <div id="hours-container">Loading...</div>
+
+  <button id="toggle-form" title="Add Office Hour">+</button>
+
+  <div id="form-panel">
+    <h3 style="margin-top: 0;">Add Office Hour</h3>
+    <form id="office-hours-form">
+      <input type="text" name="professor" placeholder="Professor Name" required>
+      <input type="text" name="course" placeholder="Course (optional)">
+      <input type="text" name="day" placeholder="Day (e.g., Monday)" required>
+      <input type="text" name="time" placeholder="Time (e.g., 2–4 PM)" required>
+      <input type="text" name="location" placeholder="Location" required>
+      <input type="text" name="format" placeholder="Format (In-person or Zoom)" required>
+      <input type="text" name="notes" placeholder="Notes (optional)">
+      <button type="submit">Submit</button>
+      <div id="form-status"></div>
+    </form>
+  </div>
+
+  <div id="toast-container"></div>
+  <script src="main.js" defer></script>
+</body>
+</html>
